@@ -1,0 +1,12 @@
+.languageBox{
+    padding: 140px 0 15px 0;
+}
+
+
+
+.languageBox button{
+    border-radius: 0;
+    padding: 0;
+    margin:8px;
+    --IconButton-hoverBg: transparent;
+}

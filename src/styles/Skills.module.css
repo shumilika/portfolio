@@ -1,0 +1,23 @@
+.skillsBox{
+    background-color: #1f1f1f;
+    color: #fff;
+    /* height: 200px; */
+    padding-bottom: 10%;
+}
+
+.skillsBox h2{
+    margin: 0;
+}
+
+.skillItem{
+    background-color: rgba(248, 245, 244, .05);
+    padding: 10px 25px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.skillItem p{
+    font-size: 14px;
+    margin: 0;
+    padding-top: 7px;
+}

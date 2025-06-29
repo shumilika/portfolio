@@ -1,0 +1,32 @@
+.experienceBox{
+    background-color: #e9d5a1;
+    height: auto;
+}
+
+.experienceBox h2{
+    margin: 0;
+}
+
+/* .hourGlassBox{
+    top: 16px;
+} */
+.chips{
+    margin-top: 15px;
+}
+.chips>div{
+    margin-right: 5px;
+    font-size: 11px;
+    background-color: #f9f5e9;
+}
+
+@media only screen and (min-width: 375px) {
+    .hourGlassBox{
+        top:42px;
+    }
+}
+
+@media only screen and (min-width: 1146px) {
+    .hourGlassBox{
+        top:16px;
+    }
+}

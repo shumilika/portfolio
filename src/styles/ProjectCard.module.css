@@ -1,0 +1,38 @@
+.cardBox{
+    text-align: center;
+    transition: all .2s linear !important;
+    z-index: 0;
+    position: relative;
+}
+
+.cardBox:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+    transform: scale(1.01);
+    z-index:10;
+}
+
+.imgBox{
+    padding: 10px;
+    position: relative;
+    z-index: 0;
+}
+
+.imgBox img{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  
+}
+
+.sliderImage{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    position: relative;
+}
+
+.title{
+    color: #212529;
+    padding-top: 5px;
+}

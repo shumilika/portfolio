@@ -1,0 +1,38 @@
+.title  {
+align-items: center;
+
+}
+
+.imgBox{
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.imgBox img{
+    max-width: 200px;
+    margin-bottom: 40px;
+    height: auto;
+}
+.cardAboutBox{
+    margin-top: 50px;
+}
+
+.cardHeader{
+    background-color: rgba(0, 0, 0, .03);
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    
+    padding: 10px;
+}
+
+.textBox{
+    padding: 20px;
+    color: #212529;
+    font-family: sans-serif;
+}
+
+.textBox .wave{
+    font-size: 140%;
+}
+.textBox p{
+    letter-spacing: 0.4;
+}

@@ -1,0 +1,34 @@
+{
+  "Buttons": {
+    "download_btn": "Download resume"
+  },
+  "Header": {
+    "name": "Polina Shumilina",
+    "job": "Front-end developer"
+  },
+  "About": {
+    "title" : "About me",
+    "hi": "Hi",
+    "1 path": "I'm Polya - a junior frontend developer focused on React",
+    "2 path": "and building responsive, user-friendly web apps. I enjoy clean design",
+    "3 path": "clear code, and bringing interfaces to life.",
+    "4 path": "I'm currently growing my skills with Next.js and TypeScript",
+    "5 path": "and working on personal projects that reflect my learning path. Outside of coding, I love dancing",
+    "6 path": "and traveling",
+    "7 path": "both inspire my creativity",
+    "8 path": "I'm looking for a junior frontend role where I can contribute, learn, and grow in a collaborative team"
+  },
+  "Projects": {
+    "title": "Projects",
+    "clean description" : "This app is a course project developed as part of my studies at Tel-Ran. It’s a simple and responsive web app where users can choose a cleaning service type and date. The platform also allows registration as either a cleaner or a client.",
+    "tea description" : "This is a personal project — an online tea shop with a clean, user-friendly homepage and product catalog. Tea products are stored in Firebase, and each item can be viewed on its own detail page. The site works with dynamic data and renders content based on the Firebase database.",
+    "recipe description": "This is a personal project built with Next.js and TypeScript, created to explore dynamic data handling and modern frontend tools. Users can add and delete their own recipes, with all data stored in Firebase. The app features a clean UI and focuses on interactivity and real-time updates."
+    
+  },
+  "Skills": {
+    "title": "Skills"
+  },
+  "Experience": {
+    "title": "Experience"
+  }
+}
