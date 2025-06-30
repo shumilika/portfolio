@@ -59,7 +59,7 @@ const ProjectCard:React.FC<CardProps> = ({title, imgSrc,imgSlide1, imgSlide2, gi
     nextArrow: <ArrowSlideNext/>
   };
 
-  
+  console.log(liveDemo)
 
   return (
     <>
@@ -96,7 +96,7 @@ const ProjectCard:React.FC<CardProps> = ({title, imgSrc,imgSlide1, imgSlide2, gi
 </DialogContent>
 <DialogActions>
 <Button size="large" href={gitHubUrl} sx={{color: '#caae79'}}>GitHub</Button>
-<Button size="large" href={liveDemo} sx={{color: '#caae79'}}>Live Demo</Button>
+{/* <Button size="large" href={liveDemo} sx={{color: '#caae79'}}>Live Demo</Button> */}
 </DialogActions>
 </Dialog>
 </>
