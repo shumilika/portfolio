@@ -36,3 +36,40 @@ align-items: center;
 .textBox p{
     letter-spacing: 0.4;
 }
+
+@media only screen and  (max-width: 1440px){
+    .cardAboutBox{
+        margin-top: 20px;
+    }
+}
+
+@media only screen and  (max-width: 1024px){
+    .cardAboutBox{
+        margin-top: 10px;
+    }
+}
+
+@media only screen and  (max-width: 963px){
+    .cardAboutBox{
+        margin-top: 0;
+    }
+}
+
+@media only screen and  (max-width: 900px){
+    .imgBox{
+        display: grid;
+    }
+}
+
+@media only screen and  (600px<width< 700px){
+   .imgBox img{
+    max-width: 150px;
+   }
+}
+
+@media only screen and  (440px>width){
+   .imgBox img{
+    width: 100%;
+    margin-bottom: 5px;
+   }
+}

@@ -5,13 +5,14 @@ import ButtonDownload from './ButtonDownload';
 import SvgIconCode from './SvgIconCode';
 import { Stack } from '@mui/material';
 import AnimatedHeader from './AnimatedHeader';
+import styles from '../styles/Header.module.css'
 
 
 const Header = () => {
     const t = useTranslations('Header');
 
   return (
-    <header style={{height:'400px', paddingTop:'250px'}}>
+    <header className={styles.header_box}>
         <Stack
             direction={'column'}
             spacing={0}

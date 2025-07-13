@@ -1,0 +1,24 @@
+.header_box{
+    height: 400px;
+    padding-top: 250px;
+}
+
+.btn{
+    color: #000 !important;
+    background-color: #fff !important;
+}
+
+@media only screen and (max-height:850px) {
+    .header_box{
+        padding-top: 180px;
+    }
+}
+
+@media only screen and (max-height:775px) {
+    .header_box{
+        padding-top: 10%;
+         height: auto;
+    }
+}
+
+

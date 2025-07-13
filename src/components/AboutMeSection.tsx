@@ -14,6 +14,7 @@ const AboutMeSection = () => {
             <h2 className='standard_header'>{t('title')} 🌱</h2>
         </Stack>
         <Grid container
+        
             direction={{  md: 'row' }}
             sx={{
                 justifyContent:'space-around',
@@ -21,12 +22,14 @@ const AboutMeSection = () => {
             }}
             
         >
-                <Grid size={{ xs:6 ,sm: 4, md: 'auto' }}>
+                <Grid size={{ xs:6 ,sm: 4, md: 'auto' }}
+                sx={{ mb: { xs: 3, md: 0 } }}
+                >
                 <Paper elevation={3} className={styles.imgBox}>
                     <Image src={photo.src} width={500} height={500} alt='avatar'  />
                 </Paper>
                 </Grid>
-            <Grid size={6} offset={{ xs: 4, md: 0 }}>
+            <Grid size={{md:6, sm:6, xs:10}}>
             <Paper elevation={3} className={styles.cardAboutBox}>
                 <div className={styles.cardHeader}>
                         <Stack

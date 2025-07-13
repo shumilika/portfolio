@@ -63,7 +63,7 @@ const ProjectCard:React.FC<CardProps> = ({title, imgSrc,imgSlide1, imgSlide2, gi
 
   return (
     <>
-    <Paper elevation={3} sx={{ maxWidth: 345 }} className={styles.cardBox} onClick={handleOpen}>
+    <Paper elevation={3}  className={styles.cardBox} onClick={handleOpen}>
         <div className={styles.imgBox}>
           <Image src={imgSrc} alt="project screenshot" width={500} height={144} />
         </div>

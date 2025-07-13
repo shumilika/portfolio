@@ -10,3 +10,9 @@
     margin:8px;
     --IconButton-hoverBg: transparent;
 }
+
+@media only screen and (max-height: 670px){
+    .languageBox{
+        padding-top: 10%;
+    }
+}

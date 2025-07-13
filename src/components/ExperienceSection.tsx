@@ -26,7 +26,7 @@ const ExperienceSection = () => {
       rootMargin: '0px 0px -40px 0px',
       triggerOnce: false,
     }}
-    className="vertical-timeline-element--work"
+    className={`vertical-timeline-element--work ${styles.timeline_element}`}
     date="03 - 12.2024"
     iconStyle={{ background: 'rgb(174, 148, 79)',border:'2px solid #fff', color: '#fff'}}
     icon={<WorkIcon />}
@@ -48,7 +48,7 @@ const ExperienceSection = () => {
       rootMargin: '0px 0px -40px 0px',
       triggerOnce: false,
     }}
-    className="vertical-timeline-element--work"
+    className={`vertical-timeline-element--work ${styles.timeline_element}`}
     date="05.2022 - 10.2023"
     iconStyle={{ background: 'rgb(174, 148, 79)',border:'2px solid #fff', color: '#fff' }}
     icon={<WorkIcon />}

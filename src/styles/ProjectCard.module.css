@@ -3,13 +3,15 @@
     transition: all .2s linear !important;
     z-index: 0;
     position: relative;
+     width: 320px;
+
 }
 
 .cardBox:hover{
     box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
     transform: scale(1.01);
     z-index:10;
-}
+} 
 
 .imgBox{
     padding: 10px;
@@ -35,4 +37,10 @@
 .title{
     color: #212529;
     padding-top: 5px;
+}
+
+@media only screen and (max-width:1050px) {
+    .cardBox{
+        width: 300px;
+    }
 }

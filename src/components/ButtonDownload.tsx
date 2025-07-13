@@ -2,7 +2,7 @@
 import { Button } from '@mui/material'
 import React from 'react'
 import SvgIconDownload from './SvgIconDownload'
-import styles from '../styles/Button.module.css'
+import styles from '../styles/Header.module.css'
 import {useTranslations} from 'next-intl';
 
 

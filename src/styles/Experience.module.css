@@ -7,9 +7,6 @@
     margin: 0;
 }
 
-/* .hourGlassBox{
-    top: 16px;
-} */
 .chips{
     margin-top: 15px;
 }
@@ -19,14 +16,30 @@
     background-color: #f9f5e9;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (max-width: 1170px) {
+   .experienceBox{
+    padding-left: 10%;
+   }
+
     .hourGlassBox{
-        top:42px;
+        top:46px;
+    }
+    
+    .timeline_element{
+        width:600px;
     }
 }
 
-@media only screen and (min-width: 1146px) {
+@media only screen and (max-width: 772px) {
+   .experienceBox{
+    padding-left: 10%;
+   }
+
     .hourGlassBox{
-        top:16px;
+        top:46px;
+    }
+    
+    .timeline_element{
+        width:95%;
     }
 }
