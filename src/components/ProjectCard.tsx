@@ -31,25 +31,12 @@ const ProjectCard:React.FC<CardProps> = ({title, imgSrc,imgSlide1, imgSlide2, gi
   const settings = {
     dots: true,
     appendDots: (dots:React.ReactNode) => (
-      <div
-        style={{
-          bottom: '-30px',
-          
-        }}
-      >
+      <div>
         <ul style={{ margin: '0px' }}> {dots} </ul>
       </div>
     ),
     customPaging: () => (
-      <div
-        style={{
-          width: '15px',
-          height: '15px',
-          borderRadius: '50%',
-          backgroundColor: '#e9d5a1',
-          transition: 'all 0.3s ease',
-        }}
-      ></div>
+      <div className={styles.li_slider}></div>
     ),
     infinite: true,
     speed: 500,
@@ -90,7 +77,8 @@ const ProjectCard:React.FC<CardProps> = ({title, imgSrc,imgSlide1, imgSlide2, gi
   {description}
   </p>
   </DialogContentText>
-  <Stack direction="row" spacing={1} mt={1}>
+  <Stack  direction='row'  useFlexGap
+  sx={{ flexWrap: 'wrap' }} spacing={2} mt={1}>
     {chips.map((value,index)=> <Chip sx={{background:'#f9f5e9'}} key={index} label={value} />)}
       </Stack>
 </DialogContent>

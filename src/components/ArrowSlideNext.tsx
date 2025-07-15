@@ -23,12 +23,16 @@ const ArrowSlideNext:React.FC<ArrowNextProps> = ({ onClick}) => {
     size='small'
   >
     <ArrowForwardIosIcon 
+    className='icon_size'
     sx={{
       color:'#e9d5a1',
       fontSize:80,
       transition: 'color 0.5s ease',
       '&:hover': {
       color: '#caae79', 
+    },
+     '@media (max-width: 700px)': {
+      fontSize: 50, 
     },
     }}/>
   </IconButton>

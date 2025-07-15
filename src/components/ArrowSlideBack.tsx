@@ -30,6 +30,9 @@ const ArrowSlideBack:React.FC<ArrowBackProps> = ({ onClick}) => {
       '&:hover': {
       color: '#caae79', 
     },
+     '@media (max-width: 700px)': {
+      fontSize: 50, 
+    },
       }}/>
   </IconButton>
   )

@@ -48,7 +48,7 @@ const SkillsSection = () => {
     }}>
     {skillsArray.map((skill, index) => (
 
-          <Grid key={index}>
+          <Grid key={index} minWidth={{ xs:115, md:'auto' }}>
             <div className={styles.skillItem}>
            <div>
             {skill.icon}
