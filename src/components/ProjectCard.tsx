@@ -101,7 +101,7 @@ const ProjectCard: React.FC<CardProps> = ({
       </Paper>
 
       <Dialog open={open} onClose={handleClose} maxWidth="md" fullWidth>
-        <DialogContent>
+        <DialogContent sx={{ maxHeight: '80vh', overflowY: 'auto' }}>
           {sliderReady && (<div className="slider-container">
             <Slider {...settings} ref={sliderRef}>
               <div>
@@ -111,6 +111,7 @@ const ProjectCard: React.FC<CardProps> = ({
                   className={styles.sliderImage}
                   width={500}
                   height={500}
+                  layout="responsive"
                 />
               </div>
               <div>
@@ -120,6 +121,7 @@ const ProjectCard: React.FC<CardProps> = ({
                   className={styles.sliderImage}
                   width={500}
                   height={500}
+                  layout="responsive"
                 />
               </div>
               <div>
@@ -129,6 +131,7 @@ const ProjectCard: React.FC<CardProps> = ({
                   className={styles.sliderImage}
                   width={500}
                   height={400}
+                  layout="responsive"
                 />
               </div>
             </Slider>

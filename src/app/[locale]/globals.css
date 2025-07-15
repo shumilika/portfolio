@@ -55,6 +55,11 @@ footer .copyright{
   height: 18px !important;
 }
 
+.slider-container{
+   max-height: 70vh;
+    position: relative;
+}
+
 
 @media only screen and (max-width: 432px) {
     header h1{
