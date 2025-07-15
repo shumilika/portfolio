@@ -1,7 +1,7 @@
 'use client';
 import { Button, Chip, Dialog,
   DialogActions, DialogContent, DialogContentText,  Paper,  Stack, Typography } from '@mui/material'
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import styles from '../styles/ProjectCard.module.css'
 import Slider from "react-slick";
 import ArrowSlideBack from './ArrowSlideBack';
@@ -27,6 +27,15 @@ const ProjectCard:React.FC<CardProps> = ({title, imgSrc,imgSlide1, imgSlide2, gi
 
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const sliderRef = useRef<any>(null);
+
+useEffect(() => {
+  if (open && sliderRef.current) {
+    setTimeout(() => {
+      sliderRef.current.slickGoTo(0); // перерендерит корректно
+    }, 100); // лучше 100–300ms, чем 0
+  }
+}, [open]);
 
   const settings = {
     dots: true,
@@ -65,7 +74,7 @@ const ProjectCard:React.FC<CardProps> = ({title, imgSrc,imgSlide1, imgSlide2, gi
 
 <DialogContent>
  <div className='slider-container'>
- <Slider {...settings}>
+ <Slider {...settings} ref={sliderRef}>
         <div><Image src={imgSrc} alt="" className={styles.sliderImage} width={500} height={500} /></div>
         <div><Image src={imgSlide1} alt="" className={styles.sliderImage} width={500} height={500} /></div>
         <div><Image src={imgSlide2} alt="" className={styles.sliderImage} width={500} height={400}  /></div>
