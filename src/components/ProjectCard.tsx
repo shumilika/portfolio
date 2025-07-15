@@ -10,7 +10,7 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import styles from "../styles/ProjectCard.module.css";
 import Slider from "react-slick";
 import ArrowSlideBack from "./ArrowSlideBack";
@@ -42,29 +42,7 @@ const ProjectCard: React.FC<CardProps> = ({
 
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const sliderRef = useRef<Slider>(null);
-  const [sliderReady, setSliderReady] = useState(false);
-
-  useEffect(() => {
-    if (open && sliderRef.current) {
-      const currentSlider = sliderRef.current;
-      setTimeout(() => {
-        if (currentSlider) {
-          currentSlider.slickGoTo(0);
-        }
-      }, 100);
-    }
-  }, [sliderReady]);
-
-  useEffect(() => {
-    if (open) {
-      setTimeout(() => {
-        setSliderReady(true);
-      }, 200);
-    } else {
-      setSliderReady(false);
-    }
-  }, [open]);
+  
   const settings = {
     dots: true,
     appendDots: (dots: React.ReactNode) => (
@@ -102,8 +80,8 @@ const ProjectCard: React.FC<CardProps> = ({
 
       <Dialog open={open} onClose={handleClose} maxWidth="md" fullWidth>
         <DialogContent sx={{ maxHeight: '80vh', overflowY: 'auto' }}>
-          {sliderReady && (<div className="slider-container">
-            <Slider {...settings} ref={sliderRef}>
+           (<div className="slider-container">
+            <Slider {...settings}>
               <div>
                 <Image
                   src={imgSrc}
@@ -135,7 +113,7 @@ const ProjectCard: React.FC<CardProps> = ({
                 />
               </div>
             </Slider>
-          </div>)}
+          </div>
           <h3 className={styles.title}>{title}</h3>
           <DialogContentText>
             <p>{description}</p>
