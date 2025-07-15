@@ -43,18 +43,28 @@ const ProjectCard: React.FC<CardProps> = ({
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const sliderRef = useRef<Slider>(null);
+  const [sliderReady, setSliderReady] = useState(false);
 
   useEffect(() => {
-  if (open && sliderRef.current) {
-    const currentSlider = sliderRef.current; 
-    setTimeout(() => {
-      if (currentSlider) { 
-        currentSlider.slickGoTo(0);
-      }
-    }, 100);
-  }
-}, [open]);
+    if (open && sliderRef.current) {
+      const currentSlider = sliderRef.current;
+      setTimeout(() => {
+        if (currentSlider) {
+          currentSlider.slickGoTo(0);
+        }
+      }, 100);
+    }
+  }, [sliderReady]);
 
+  useEffect(() => {
+    if (open) {
+      setTimeout(() => {
+        setSliderReady(true);
+      }, 200);
+    } else {
+      setSliderReady(false);
+    }
+  }, [open]);
   const settings = {
     dots: true,
     appendDots: (dots: React.ReactNode) => (
@@ -92,7 +102,7 @@ const ProjectCard: React.FC<CardProps> = ({
 
       <Dialog open={open} onClose={handleClose} maxWidth="md" fullWidth>
         <DialogContent>
-          <div className="slider-container">
+          {sliderReady && (<div className="slider-container">
             <Slider {...settings} ref={sliderRef}>
               <div>
                 <Image
@@ -122,7 +132,7 @@ const ProjectCard: React.FC<CardProps> = ({
                 />
               </div>
             </Slider>
-          </div>
+          </div>)}
           <h3 className={styles.title}>{title}</h3>
           <DialogContentText>
             <p>{description}</p>
