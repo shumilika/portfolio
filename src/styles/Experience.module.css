@@ -15,6 +15,9 @@
     font-size: 11px;
     background-color: #f9f5e9;
 }
+.hourGlassBox{
+        top:16px;
+}
 
 @media only screen and (max-width: 1170px) {
    .experienceBox{
@@ -31,13 +34,6 @@
 }
 
 @media only screen and (max-width: 772px) {
-   .experienceBox{
-    padding-left: 10%;
-   }
-
-    .hourGlassBox{
-        top:46px;
-    }
     
     .timeline_element{
         width:95%;
